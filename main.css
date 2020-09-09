@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.animate {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.one,
+.two,
+.three {
+  justify-content: flex-start;
+  border: 1px solid rgb(3, 168, 173);
+}
+
+h3 {
+  background-color: rgb(2, 200, 207);
+  color: white;
+  text-align: left;
+  padding: 8px;
+  font-weight: 200;
+}
+
+h3:hover {
+  background-color: rgb(6, 215, 223);
+}
+
+p {
+  padding: 30px;
+  color: gray;
+}
+
+.one p,
+.two p {
+  display: none;
+}
+
+.one,
+.two {
+  overflow: hidden;
+}
