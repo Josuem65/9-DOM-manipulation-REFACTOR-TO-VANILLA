@@ -7,27 +7,26 @@
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <script src="main.js"></script>
     <div class="animate">
-      <div class="one transitioning">
+      <div class="one" onclick="modify('set1', 'set2', 'set3')">
         <h3>Section One</h3>
-        <p>
+        <p id="set1">
           This a paragraph used to demo a jQuery Accordian. This sentence is
           just a filler. This third sentence is also a filler.
         </p>
       </div>
-      <div class="two" onmouseenter="trans()">
+      <div class="two" onclick="modify('set2', 'set1', 'set3')">
         <h3>Section Two</h3>
-        <p>
+        <p id="set2">
           This a paragraph used to demo a jQuery Accordian. This sentence is
           just a filler. This third sentence is also a filler. This a paragraph
           used to demo a jQuery Accordian. This sentence is just a filler. This
           third sentence is also a filler.
         </p>
       </div>
-      <div class="three" onmouseenter="trans()">
+      <div class="three" onclick="modify('set3', 'set1', 'set2')">
         <h3>Section Three</h3>
-        <p>
+        <p class="setter3" id="set3">
           This a paragraph used to demo a jQuery Accordian. This sentence is
           just a filler. This third sentence is also a filler. This a paragraph
           used to demo a jQuery Accordian. This sentence is just a filler. This
@@ -37,5 +36,6 @@
         </p>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

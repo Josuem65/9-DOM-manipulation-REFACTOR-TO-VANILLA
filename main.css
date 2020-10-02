@@ -36,12 +36,12 @@ p {
   color: gray;
 }
 
-.one p,
-.two p {
+p {
   display: none;
 }
 
-.one,
-.two {
-  overflow: hidden;
+.setter3 {
+  display: block;
 }
+
+
